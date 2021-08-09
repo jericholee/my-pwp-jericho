@@ -2,3 +2,6 @@
     background-color: gold;
     flex-direction: column;
 }
+section {
+    flex-direction: column;
+}
