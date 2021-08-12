@@ -5,10 +5,3 @@
 section {
     flex-direction: column;
 }
-img {
-max-width: 10%;
-    height:10%;
-}
-.navbar {
-    background-color: silver;
-}
