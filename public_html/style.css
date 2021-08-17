@@ -31,6 +31,19 @@ body {
     background-color: #ffc107;
 }
 
-navbar {
-    background-color: ;
+#inventory {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
+}
+
+#jairo {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+}
+
+.nav-link {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
 }
