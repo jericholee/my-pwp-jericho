@@ -1,10 +1,11 @@
 .carousel-item {
     height: 32rem;
-    background: black;
+    background: #ffc107;
     color: white;
     position: relative;
+    object-fit: contain;
 }
-.container {
+.container div {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -13,6 +14,23 @@
 }
 
 #aboutme {
-
+text-align: center;
 }
 
+#aboutme {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    background-color: #ffc107;
+}
+
+h1 {
+   text-align: center;
+}
+
+body {
+    background-color: #ffc107;
+}
+
+navbar {
+    background-color: ;
+}
