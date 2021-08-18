@@ -12,12 +12,8 @@
     right: 0;
     padding-bottom: 50px;
 }
-
 #aboutme {
-text-align: center;
-}
-
-#aboutme {
+    text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
     font-size: 2em;
@@ -29,6 +25,8 @@ h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 2.5em;
+    text-emphasis: 'x';
+    -webkit-text-emphasis: 'x';
 }
 
 body {
@@ -56,4 +54,6 @@ h2 {
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
     text-align: center;
+    text-emphasis: 'x';
+    -webkit-text-emphasis: 'x';
 }
