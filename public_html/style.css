@@ -18,13 +18,17 @@ text-align: center;
 }
 
 #aboutme {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 1.5em;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 2em;
     background-color: #ffc107;
 }
 
 h1 {
-   text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5em;
 }
 
 body {
@@ -46,4 +50,10 @@ body {
 .nav-link {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.5em;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    text-align: center;
 }
