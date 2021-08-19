@@ -1,5 +1,5 @@
 .carousel-item {
-    height: 32rem;
+    max-height: 32rem;
     background: #ffc107;
     color: white;
     position: relative;
