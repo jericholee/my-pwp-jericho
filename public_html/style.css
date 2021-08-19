@@ -57,3 +57,7 @@ h2 {
     text-emphasis: 'x';
     -webkit-text-emphasis: 'x';
 }
+
+#carouselExampleIndicators {
+    border: solid;
+}
