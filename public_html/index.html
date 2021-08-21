@@ -18,11 +18,12 @@
 
 	<link href="style.css" rel="stylesheet">
 
-
 </head>
+<div class="g-recaptcha" data-sitekey=""></div>
 <body>
+<div class="parent">
 <!--Start Navbar-->
-<div>
+<div class="child-one child">
 	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
 		<div class="container-fluid">
 		<a id="jairo" class="navbar-brand" href="#">Jairo Alvarado</a>
@@ -44,7 +45,7 @@
 <!--End Navbar-->
 <br>
 
-<div id="aboutme" class="col-lg-10 container-fluid">
+<div id="aboutme" class="child-two child" class="col-lg-10 container-fluid">
 <h1>About Me</h1>
 <p>Hi! My name is Jairo Alvarado & selling cars is not just a job to me. My motto is don't just buy a car, have fun while you do it! Selling can be the most difficult and poorly paying career if you do not enjoy working with people, or it can be incredibly rewarding and the best-paid career if you love helping and working with people as it is in my case. Do me a favor and have a nice day!</p>
 </div>
@@ -52,7 +53,7 @@
 <div>
 	<h2>Satisfied Customers</h2>
 </div>
-<div class="col-lg-7 mx-auto">
+<div class="child-three child" class="col-lg-7 mx-auto">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-indicators">
 		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -92,16 +93,66 @@
 
 <!--Link to Inventory-->
 
-<div id="inventory" class="container">
+<div id="inventory" class="child-four child" class="container">
 	Check out the extensive New & Used car inventory and set up an appointment today!
 <a href="https://www.qualitymazdanm.com/new-vehicles/all-vehicles/">Inventory</a>
 </div>
 <!--End of link section-->
+<br>
 
+<!--Contact Form Start-->
+<br>
+<div id="form" class="child-five child" class="container mx-auto">
+	<h3>Contact Me</h3>
+<div class="mb-3">
+	<label for="exampleFormControlInput1" class="form-label">Name:</label>
+	<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+</div>
+<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Email:</label>
+		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email@email.com">
+</div>
+<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Subject:</label>
+		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+</div>
+<div class="mb-3">
+
+
+		<label for="exampleFormControlInput1" class="m-2" rows="5" "form-label">Message:</label>
+		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Message (2000 Characters Max)">
+</div>
+</div>
+<!--End Contact Form-->
+
+<!-- Make sure  to use jQuery min and not the slim version provided by bootstrap-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-		crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
+<!-- jQuery Form , Validate, Additional Methods-->
+<!--This link came from https://cdnjs.com/libraries/jquery.form-->
+<script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!--Customer jQuery script-->
+<script src="style.css"></script>
+</div>
+<!--Start Footer-->
+<div class="child-six child">
+	<footer>
+		<div class="footer">
+
+		</div>
+	</footer>
+</div>
+<!--End Footer-->
 </body>
 </html>

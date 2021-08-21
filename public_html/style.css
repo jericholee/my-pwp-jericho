@@ -61,3 +61,40 @@ h2 {
 #carouselExampleIndicators {
     border: solid;
 }
+
+.parent{
+
+}
+
+.child-one {
+
+}
+
+.child-two {
+
+}
+
+.child-three {
+
+}
+
+.child-four {
+
+}
+
+.child-five {
+border: solid black;
+}
+
+.child-six {
+
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    font-size: 3em;
+    text-emphasis: 'x';
+    -webkit-text-emphasis: 'x';
+}
