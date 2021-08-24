@@ -37,6 +37,7 @@ body {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 2em;
+
 }
 
 #jairo {
@@ -63,7 +64,7 @@ h2 {
 }
 
 .parent{
-
+flex-wrap: wrap;
 }
 
 .child-one {
@@ -97,4 +98,12 @@ h3 {
     font-size: 3em;
     text-emphasis: 'x';
     -webkit-text-emphasis: 'x';
+}
+
+#message-box {
+    height: 200px;
+}
+
+.submit {
+
 }
