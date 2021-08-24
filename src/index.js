@@ -23,11 +23,12 @@ const mg = mailgun.client({username:'api', key: process.env.MAILGUN_API_KEY})
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json)
+app.use(bodyParser.json())
 
 const indexRoute = express.Router()
 
 const handleGetRequest = (req, res) => {
+	console.log("Did I make it here?")
 	return res.json('The express server is live.')
 }
 
@@ -36,7 +37,7 @@ const handlePostRequest = (req, res) => {
 // res.header('Access-Control-Allow-Origin', '*')
 
 	if(req.recaptcha.error) {
-		return response.send(
+		return res.send(
 			`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`
 		)
 	}
@@ -60,7 +61,7 @@ const handlePostRequest = (req, res) => {
 	mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
 		.then(msg =>
 			res.send(
-				`<div class='alert alert-success' role='alert'>${JSON.stringify(msg)}</div>`
+				`<div class='alert alert-success' role='alert'>Email Successfully Sent</div>`
 			)
 		)
 		.catch(err =>

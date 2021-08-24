@@ -19,7 +19,6 @@
 	<link href="style.css" rel="stylesheet">
 
 </head>
-<div class="g-recaptcha" data-sitekey=""></div>
 <body>
 <div class="parent">
 <!--Start Navbar-->
@@ -36,7 +35,7 @@
 				<a class="nav-link active" aria-current="page" href="#">About Me</a>
 				<a class="nav-link active" href="#">Satisfied Customers</a>
 				<a class="nav-link active" href="#">Inventory</a>
-				<a class="nav-link active" href="#">Contact Me</a>
+				<a class="nav-link active" href="#contact">Contact Me</a>
 			</div>
 		</div>
 	</div>
@@ -102,31 +101,41 @@
 
 <!--Contact Form Start-->
 <br>
-	<form action="/apis/"   id="contact" method="post" novalidate>
+	<form action="./apis/"   id="contact" method="post" novalidate>
 <div class="child-five child" class="container mx-auto">
 	<h3>Contact Me</h3>
 <div class="mb-3">
 	<label for="name" class="form-label">Name:</label>
-	<input type="email" class="form-control" id="name" placeholder="Your Name">
+	<input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
 </div>
 <div class="mb-3">
 		<label for="email" class="form-label">Email:</label>
-		<input type="email" class="form-control" id="email" placeholder="Your email@email.com">
+		<input type="email" name="email" class="form-control" id="email" placeholder="Your email@email.com">
 </div>
 <div class="mb-3">
 		<label for="subject" class="form-label">Subject:</label>
-		<input type="email" class="form-control" id="subject" placeholder="Subject">
+		<input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
 </div>
 <div class="mb-3">
-		<label for="message-box" class="form-label">Message:</label>
-	<textarea rows="4" type="email" class="form-control" id="message-box" placeholder="Your Message (2000 Characters Max)"></textarea>
+		<label for="message" class="form-label">Message:</label>
+	<textarea rows="4" class="form-control" id="message" name="message" placeholder="Your Message (2000 Characters Max)"></textarea>
+</div>
 	<div class="g-recaptcha" data-sitekey="6LfIQCAcAAAAAOFgL_CHxr2Hc5k9y8u4fcjccZjx"></div>
-	<button id="submit" type="button" class="btn btn-dark">Submit</button>
-	</div>
+	<button id="submit" type="submit" class="btn btn-dark">Submit</button>
 </div>
 </form>
+	<div id="output-area"></div>
 <!--End Contact Form-->
+</div>
+<!--Start Footer-->
+<div class="child-six child">
+	<footer>
+		<div class="footer">
 
+		</div>
+	</footer>
+</div>
+<!--End Footer-->
 <!-- Make sure  to use jQuery min and not the slim version provided by bootstrap-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -142,20 +151,11 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 <!-- Google reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 <!--Customer jQuery script-->
-<script src="style.css"></script>
-</div>
-<!--Start Footer-->
-<div class="child-six child">
-	<footer>
-		<div class="footer">
+<script src="script.js"></script>
 
-		</div>
-	</footer>
-</div>
-<!--End Footer-->
 
 </body>
 </html>

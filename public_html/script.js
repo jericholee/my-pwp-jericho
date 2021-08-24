@@ -17,7 +17,7 @@ $(document).ready(function() {
 			},
 			message: {
 				required: true,
-				maxLength: 2000
+				maxlength: 2000
 			}
 		},
 		messages: {
@@ -30,14 +30,14 @@ $(document).ready(function() {
 			},
 			message: {
 				required: 'Message is required',
-				maxLength: 'Message must be 2000 characters or less.'
+				maxlength: 'Message must be 2000 characters or less.'
 			}
 		},
-		sumbitHandler: () => {
+		submitHandler: () => {
 			$('#contact').ajaxSubmit({
-				type: 'POST',
-				url: $('#contact').attr('action'),
-				success: (ajaxOutput) => {
+				"type": 'POST',
+				"url": $('#contact').attr('action'),
+				"success": (ajaxOutput) => {
 					$("#output-area").css('display', '')
 					$('#output-area').html(ajaxOutput)
 
