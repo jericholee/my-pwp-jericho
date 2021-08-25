@@ -87,10 +87,6 @@ flex-wrap: wrap;
 border: solid black;
 }
 
-.child-six {
-
-}
-
 h3 {
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
@@ -106,4 +102,27 @@ h3 {
 
 .submit {
 
+}
+
+.fa-github {
+    color: white;
+    font-size: 30px;
+}
+
+.fa-linkedin {
+    color: blue;
+    font-size: 30px;
+}
+
+.fa-twitter {
+    color: dodgerblue;
+    font-size: 30px;
+}
+
+.footer-container\" {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: white;
+    background-color: black;
 }
